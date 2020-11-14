@@ -83,10 +83,10 @@ class Client():
 
 
 def main():
-	table = Iptable(freq=100)
+	table = Iptable(freq=12)
 	while True:
 		try:
-			table.update(12)
+			table.update()
 		except TimeoutError:
 			time.sleep(5)
 			table.update()
